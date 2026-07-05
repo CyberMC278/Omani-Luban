@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title">اللبان العماني - أصالة وتراث</title>
+    <!-- Google Fonts لتجميل الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Tajawal for Arabic, Inter for English -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- ربط ملف التنسيقات الخارجي -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+    <!-- ===== شريط التنقل العلوي (Navbar) ===== -->
+    <header>
+        <nav>
+            <h1 class="nav-logo" data-i18n="nav_logo">اللبان العماني</h1>
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+                <li><a href="#locations" data-i18n="nav_locations">أماكن التواجد</a></li>
+                <li><a href="#extraction" data-i18n="nav_extraction">طريقة الاستخلاص</a></li>
+                <li><a href="#uses" data-i18n="nav_uses">الاستخدامات</a></li>
+                <li><a href="#benefits" data-i18n="nav_benefits">الفوائد</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <!-- زر تبديل اللغة -->
+                <button id="lang-toggle" aria-label="تغيير اللغة" data-i18n="lang_toggle">EN</button>
+
+                <!-- زر تبديل الوضع الليلي -->
+                <button id="theme-toggle" aria-label="تبديل الوضع">
+                    <svg class="theme-icon moon-icon" viewBox="0 0 24 24">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="theme-icon sun-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== قسم البداية (Hero) ===== -->
+    <section id="home" class="hero" style="background-image: url('images/screenshot_1.png');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="hero_title">اللبان العماني</h1>
+            <p class="hero-desc" data-i18n="hero_desc">الذهب الأبيض، وأجود أنواع اللبان في العالم. رمز الأصالة العمانية والتراث الممتد عبر آلاف السنين.</p>
+        </div>
+    </section>
+
+    <!-- ===== قسم التعريف (Definition) ===== -->
+    <section id="definition" class="section-definition">
+        <h2 class="title" data-i18n="def_title">ما هو اللبان العماني؟</h2>
+        <div class="container">
+            <div class="centered-content">
+                <p class="section-desc" data-i18n="def_desc">
+                    <strong>اللبان العماني</strong>، المعروف أيضاً باسم "اللبان الحوجري"،  هو صمغ طبيعي ذو رائحة فواحة يُستخلص من أشجار اللبان التي تنمو في محافظة ظفار في سلطنة عمان. يتميز برائحته العطرية الفريدة وجودته العالية، ويُستخدم في صناعة العطور والبخور والمنتجات الطبية والتجميلية.
+                </p>
+                <div class="centered-image-wrapper">
+                    <img src="images/Screenshot_1.png" alt="اللبان العماني" class="responsive-img" style="max-width: 800px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== قسم أماكن التواجد (Locations) ===== -->
+    <section id="locations" class="section-alt section-locations">
+        <h2 class="title" data-i18n="loc_title">أماكن التواجد</h2>
+        <div class="container">
+            <div class="grid-layout">
+                <div class="card">
+                    <img src="images/Screenshot_8.png" alt="محافظة ظفار" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title" data-i18n="loc_dhofar_title">محافظة ظفار</h3>
+                        <p class="card-desc" data-i18n="loc_dhofar_desc">الموطن الأصلي لأجود أنواع اللبان (الحوجري)، حيث تتوفر البيئة المناخية المثالية لنمو الأشجار.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/Screenshot_2.png" alt="وادي دوكة" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title" data-i18n="loc_dawkah_title">وادي دوكة</h3>
+                        <p class="card-desc" data-i18n="loc_dawkah_desc">موقع مسجل ضمن قائمة التراث العالمي لليونسكو، ويعد محمية طبيعية ومزاراً تاريخياً لأشجار اللبان.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== قسم طريقة الاستخلاص (Extraction) ===== -->
+    <section id="extraction" class="section-extraction">
+        <h2 class="title" data-i18n="ext_title">طريقة استخلاص اللبان</h2>
+        <div class="container">
+            <div class="flex-layout">
+                <div class="text-content">
+                    <ul class="steps-list">
+                        <li class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <strong data-i18n="ext_step1_title">التوقيع (التجريح):</strong>
+                                <p data-i18n="ext_step1_desc">يتم إحداث شقوق في قشرة جذع الشجرة باستخدام أداة تقليدية حادة تسمى "المنقَف".</p>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <strong data-i18n="ext_step2_title">الانتظار والإفراز:</strong>
+                                <p data-i18n="ext_step2_desc">تُترك الشجرة لعدة أيام حتى تفرز المادة الصمغية البيضاء وتتجمد على الجذع.</p>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <strong data-i18n="ext_step3_title">الجني الأولي:</strong>
+                                <p data-i18n="ext_step3_desc">تُجمع الإفرازات الأولى وتكون عادة أقل جودة لتنظيف الشجرة.</p>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-num">4</div>
+                            <div class="step-content">
+                                <strong data-i18n="ext_step4_title">الجني الأساسي:</strong>
+                                <p data-i18n="ext_step4_desc">يتم تجريح الشجرة مرة أخرى للحصول على اللبان النقي وعالي الجودة، وتتكرر العملية عدة مرات في الموسم.</p>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-num">5</div>
+                            <div class="step-content">
+                                <strong data-i18n="ext_step5_title">الفرز والتجفيف:</strong>
+                                <p data-i18n="ext_step5_desc">يُنقل اللبان إلى أماكن مظللة ليجف تماماً، ثم يُفرز يدوياً حسب الحجم واللون والجودة.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="image-content">
+                    <img src="images/screenshot4.png" alt="طريقة استخلاص اللبان" class="section-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== قسم الاستعمالات (Uses) ===== -->
+    <section id="uses" class="section-alt section-uses">
+        <h2 class="title" data-i18n="use_title">استعمالات اللبان</h2>
+        <div class="container">
+            <div class="flex-layout reverse">
+                <div class="text-content">
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-i18n="use_1">صناعة العطور الفاخرة والبخور ذو الرائحة الزكية.</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-i18n="use_2">يستخدم في المجالات الطبية والعلاجات التقليدية.</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-i18n="use_3">يدخل في صناعة مستحضرات التجميل والعناية بالبشرة.</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-i18n="use_4">تعطير وتبخير المنازل والمجالس والمساجد.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="image-content">
+                    <img src="images/screenshot_5.png" alt="استعمالات اللبان" class="section-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== قسم الفوائد الصحية (Benefits) ===== -->
+    <section id="benefits" class="section-benefits">
+        <h2 class="title" data-i18n="ben_title">الفوائد الصحية</h2>
+        <div class="container">
+            <div class="flex-layout">
+                <div class="text-content">
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-i18n="ben_1">يعمل كمطهر طبيعي للجسم ويقوي جهاز المناعة.</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-i18n="ben_2">يساعد في تحسين صحة الجهاز التنفسي وعلاج السعال.</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-i18n="ben_3">يساهم في تقليل الالتهابات وتهدئة الأعصاب وتخفيف التوتر.</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span data-i18n="ben_4">مفيد جداً في تحسين عملية الهضم وصحة المعدة.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="image-content">
+                    <img src="images/screenshot_6.png" alt="فوائد اللبان" class="section-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== التذييل (Footer) ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo"><span data-i18n="footer_logo_1">اللبان </span><span data-i18n="footer_logo_2" style="color:var(--text-color);">العُماني</span></div>
+            <p class="footer-text" data-i18n="footer_desc">رمز الأصالة العمانية والتراث الممتد عبر آلاف السنين.</p>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/_CyberMC" target="_blank" aria-label="Instagram" class="instagram-link">
+                    <svg class="instagram-icon" viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+            </div>
+            <div class="copyright" data-i18n="footer_copy">
+                 موقع اللبان العماني | جميع الحقوق محفوظة لفريق _CyberMC
+            </div>
+        </div>
+    </footer>
+
+    <!-- ربط ملفات الجافا سكربت الخارجي -->
+    <script src="Js/lang.js"></script>
+    <script src="Js/script.js"></script>
+</body>
+</html>
