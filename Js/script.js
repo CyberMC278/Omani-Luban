@@ -1,24 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. إدارة وتفعيل الوضع الداكن (Dark Mode)
     const themeToggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
-
-    // استرجاع المظهر المفضل المخزن مسبقاً
     if (localStorage.getItem('theme') === 'dark') {
         body.classList.add('dark-mode');
     }
-
-    // تبديل الوضع عند النقر على الزر
     themeToggleBtn?.addEventListener('click', () => {
         const isDark = body.classList.toggle('dark-mode');
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
     });
-
-    // 2. التحكم بشريط التنقل (يختفي عند النزول ويظهر عند الصعود)
     let lastScrollTop = 0;
     const header = document.querySelector('header');
     const scrollThreshold = 10;
-
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -34,15 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
-
-    // 3. تحديد الرابط النشط تلقائياً (Scroll Spy)
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-links li a');
-
     window.addEventListener('scroll', () => {
         let activeId = '';
-        const scrollPosition = window.scrollY + 120; // إزاحة لتفعيل الرابط قبل الوصول للقسم
-
+        const scrollPosition = window.scrollY + 120;
         sections.forEach(section => {
             const top = section.offsetTop;
             const height = section.offsetHeight;
@@ -50,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 activeId = section.getAttribute('id') || '';
             }
         });
-
         navLinks.forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href') === `#${activeId}`) {

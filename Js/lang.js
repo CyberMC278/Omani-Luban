@@ -7,8 +7,8 @@ const translations = {
         "nav_extraction": "طريقة الاستخلاص",
         "nav_uses": "الاستخدامات",
         "nav_benefits": "الفوائد",
-        "hero_title": "اللبان العماني",
-        "hero_desc": "الذهب الأبيض، وأجود أنواع اللبان في العالم. رمز الأصالة العمانية والتراث الممتد عبر آلاف السنين.",
+        "home": "اللبان العماني",
+        "home_desc": "الذهب الأبيض، وأجود أنواع اللبان في العالم. رمز الأصالة العمانية والتراث الممتد عبر آلاف السنين.",
         "def_title": "ما هو اللبان العماني؟",
         "def_desc": "<strong>اللبان العماني</strong>، المعروف أيضاً باسم \"اللبان الحوجري\"، هو صمغ طبيعي ذو رائحة فواحة يُستخلص من أشجار اللبان التي تنمو في محافظة ظفار في سلطنة عمان. يتميز برائحته العطرية الفريدة وجودته العالية، ويُستخدم في صناعة العطور والبخور والمنتجات الطبية والتجميلية.",
         "loc_title": "أماكن التواجد",
@@ -44,22 +44,22 @@ const translations = {
         "lang_toggle": "EN"
     },
     en: {
-        "page_title": "Omani Frankincense - Authenticity & Heritage",
-        "nav_logo": "Omani Frankincense",
+        "page_title": "Omani luban - Authenticity & Heritage",
+        "nav_logo": "Omani luban",
         "nav_home": "Home",
         "nav_locations": "Locations",
         "nav_extraction": "Extraction",
         "nav_uses": "Uses",
         "nav_benefits": "Benefits",
-        "hero_title": "Omani Frankincense",
-        "hero_desc": "The white gold, the finest frankincense in the world. A symbol of Omani authenticity and a heritage extending over millennia.",
-        "def_title": "What is Omani Frankincense?",
-        "def_desc": "<strong>Omani Frankincense</strong>, also known as \"Hojari Frankincense\", is a natural, highly aromatic resin extracted from Boswellia sacra trees growing in the Dhofar region of Oman. Renowned for its unique fragrance and superior quality, it is used in perfumery, incense, and medicinal products.",
+        "home": "Omani luban",
+        "home_desc": "The white gold, the finest luban in the world. A symbol of Omani authenticity and a heritage extending over millennia.",
+        "def_title": "What is Omani luban?",
+        "def_desc": "<strong>Omani luban</strong>, also known as \"Hojari luban\", is a natural, highly aromatic resin extracted from Boswellia sacra trees growing in the Dhofar region of Oman. Renowned for its unique fragrance and superior quality, it is used in perfumery, incense, and medicinal products.",
         "loc_title": "Where It Grows",
         "loc_dhofar_title": "Dhofar Governorate",
-        "loc_dhofar_desc": "The original home of the finest Hojari frankincense, offering the ideal climatic environment for the trees to thrive.",
+        "loc_dhofar_desc": "The original home of the finest Hojari luban, offering the ideal climatic environment for the trees to thrive.",
         "loc_dawkah_title": "Wadi Dawkah",
-        "loc_dawkah_desc": "A UNESCO World Heritage site, serving as a natural reserve and historical sanctuary for frankincense trees.",
+        "loc_dawkah_desc": "A UNESCO World Heritage site, serving as a natural reserve and historical sanctuary for luban trees.",
         "ext_title": "Extraction Method",
         "ext_step1_title": "Tapping (Scraping):",
         "ext_step1_desc": "Incisions are made in the tree's bark using a traditional sharp tool called \"Manqaf\".",
@@ -68,10 +68,10 @@ const translations = {
         "ext_step3_title": "Initial Harvest:",
         "ext_step3_desc": "The first secretions are collected; these are usually lower quality and serve to clean the tree.",
         "ext_step4_title": "Primary Harvest:",
-        "ext_step4_desc": "The tree is tapped again to obtain pure, high-quality frankincense. This is repeated several times a season.",
+        "ext_step4_desc": "The tree is tapped again to obtain pure, high-quality luban. This is repeated several times a season.",
         "ext_step5_title": "Sorting and Drying:",
         "ext_step5_desc": "The resin is moved to shaded areas to dry completely, then hand-sorted by size, color, and quality.",
-        "use_title": "Uses of Frankincense",
+        "use_title": "Uses of luban",
         "use_1": "Manufacturing luxurious perfumes and highly fragrant incense.",
         "use_2": "Used in medical fields and traditional remedies.",
         "use_3": "Incorporated into cosmetics and skincare products.",
@@ -82,9 +82,9 @@ const translations = {
         "ben_3": "Contributes to reducing inflammation, calming nerves, and relieving stress.",
         "ben_4": "Highly beneficial in improving digestion and stomach health.",
         "footer_logo_1": "Omani ",
-        "footer_logo_2": "Frankincense",
+        "footer_logo_2": "luban",
         "footer_desc": "A symbol of Omani authenticity and a heritage extending over millennia.",
-        "footer_copy": "Omani Frankincense Website | All rights reserved to _CyberMC Team",
+        "footer_copy": "Omani luban Website | All rights reserved to _CyberMC Team",
         "lang_toggle": "AR"
     }
 };
@@ -92,27 +92,20 @@ const translations = {
 document.addEventListener('DOMContentLoaded', () => {
     const langToggleBtn = document.getElementById('lang-toggle');
     const htmlElement = document.documentElement;
-    
-    // Check saved language
     let currentLang = localStorage.getItem('lang') || 'ar';
-    
     function setLanguage(lang) {
         currentLang = lang;
         htmlElement.setAttribute('lang', lang);
         htmlElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
         
-        // Add class to body for specific CSS overrides (e.g. font-family)
         if (lang === 'en') {
             document.body.classList.add('lang-en');
         } else {
             document.body.classList.remove('lang-en');
         }
-
-        // Update all translation elements
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
             if (translations[lang][key]) {
-                // If the text contains HTML tags (like <strong>), use innerHTML, else textContent
                 if (translations[lang][key].includes('<')) {
                     element.innerHTML = translations[lang][key];
                 } else {
@@ -120,22 +113,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
-
-        // Update page title
         document.title = translations[lang]["page_title"];
-
-        // Update lang toggle text
         if (langToggleBtn) {
             langToggleBtn.textContent = translations[lang]["lang_toggle"];
         }
 
         localStorage.setItem('lang', lang);
     }
-
-    // Initialize with saved or default lang
     setLanguage(currentLang);
-
-    // Toggle event listener
     if (langToggleBtn) {
         langToggleBtn.addEventListener('click', () => {
             const newLang = currentLang === 'ar' ? 'en' : 'ar';
