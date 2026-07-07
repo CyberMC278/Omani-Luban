@@ -37,8 +37,7 @@ const translations = {
         "ben_2": "يساعد في تحسين صحة الجهاز التنفسي وعلاج السعال.",
         "ben_3": "يساهم في تقليل الالتهابات وتهدئة الأعصاب وتخفيف التوتر.",
         "ben_4": "مفيد جداً في تحسين عملية الهضم وصحة المعدة.",
-        "footer_logo_1": "اللبان ",
-        "footer_logo_2": "العُماني",
+        "footer_logo_1": "اللبان العُماني",
         "footer_desc": "رمز الأصالة العمانية والتراث الممتد عبر آلاف السنين.",
         "footer_copy": "موقع اللبان العماني | جميع الحقوق محفوظة لفريق _CyberMC",
         "lang_toggle": "EN"
@@ -81,8 +80,7 @@ const translations = {
         "ben_2": "Helps improve respiratory health and treats coughs.",
         "ben_3": "Contributes to reducing inflammation, calming nerves, and relieving stress.",
         "ben_4": "Highly beneficial in improving digestion and stomach health.",
-        "footer_logo_1": "Omani ",
-        "footer_logo_2": "luban",
+        "footer_logo_1": "Omani luban",
         "footer_desc": "A symbol of Omani authenticity and a heritage extending over millennia.",
         "footer_copy": "Omani luban Website | All rights reserved to _CyberMC Team",
         "lang_toggle": "AR"
