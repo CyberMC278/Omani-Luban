@@ -600,7 +600,7 @@ footer {
     max-width: 600px;
     margin: 0 auto;
 }
-.instagram-link {
+.footer-link {
     color: var(--text-color);
     transition: var(--transition);
     display: inline-flex;
@@ -611,7 +611,7 @@ footer {
     border: 1px solid var(--border-color);
     background-color: var(--bg-color);
 }
-.instagram-link:hover {
+.footer-link:hover {
     color: #fff;
     background-color: #e1306c;
     border-color: #e1306c;
