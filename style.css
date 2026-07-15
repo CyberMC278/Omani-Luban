@@ -104,35 +104,41 @@ nav {
 .nav-links li a:hover,
 .nav-links li a.active {
     color: var(--primary-color);
-    background-color: rgba(184, 144, 71, 0.1);
+    background-color: var(--border-color);
 }
 .nav-buttons {
     display: flex;
-    gap: 12px;
+    gap: 15px;
     align-items: center;
 }
-#theme-toggle, #lang-toggle {
-    background: var(--card-bg);
+#theme-toggle, 
+#lang-toggle {
+    background-color: transparent;
     color: var(--text-color);
-    border: 1px solid var(--border-color);
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: var(--transition);
+    border: 2px solid var(--primary-color);
+    border-radius: 50%; 
+    width: 42px;
+    height: 42px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    outline: none;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 0.9rem;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
 }
-#theme-toggle:hover, #lang-toggle:hover {
+
+#lang-toggle {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+#theme-toggle:hover,
+#lang-toggle:hover {
     background: var(--primary-color);
     color: #fff;
-    border-color: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transform: scale(1.1);
 }
 .theme-icon {
@@ -288,15 +294,6 @@ body.dark-mode .section-alt {
     background-repeat: no-repeat;
     margin-top: 70px;
 }
-.home-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(45, 39, 30, 0.75), rgba(18, 17, 15, 0.65));
-    z-index: 1;
-}
 .home-content {
     position: relative;
     z-index: 2;
@@ -311,15 +308,12 @@ body.dark-mode .section-alt {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 .home-title {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 20px;
+    font-size: 2.3rem;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     color: var(--primary-color);
 }
 .home-desc {
-    font-size: 1.3rem;
-    margin-bottom: 30px;
+    font-size: 1.1rem;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 

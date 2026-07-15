@@ -40,7 +40,7 @@ const translations = {
         "footer_logo_1": "اللبان العُماني",
         "footer_desc": "رمز الأصالة العمانية والتراث الممتد عبر آلاف السنين.",
         "footer_copy": "موقع اللبان العماني | جميع الحقوق محفوظة لفريق _CyberMC",
-        "lang_toggle": "EN"
+        "lang_toggle": "En"
     },
     en: {
         "page_title": "Omani frankincense - Authenticity & Heritage",
@@ -83,7 +83,7 @@ const translations = {
         "footer_logo_1": "Omani frankincense",
         "footer_desc": "A symbol of Omani authenticity and a heritage extending over millennia.",
         "footer_copy": "Omani frankincense Website | All rights reserved to _CyberMC Team",
-        "lang_toggle": "AR"
+        "lang_toggle": "Ar"
     }
 };
 
